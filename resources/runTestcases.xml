@@ -9,7 +9,8 @@
 	<test name="Run on CHROME">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<class name="atg.webportal.services.Customer_Management"/>
+<!-- 			<class name="atg.webportal.services.Customer_Management"/> -->
+			<class name="atg.webportal.administration.User_Management"/>
 		</classes>
 	</test>
 

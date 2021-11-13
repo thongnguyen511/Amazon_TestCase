@@ -1,42 +1,27 @@
-2021-11-10 00:19:31,137 INFO  atg.webportal.services.Customer_Management - Actual = Thêm mới thành công.
-2021-11-10 00:19:31,137 INFO  atg.webportal.services.Customer_Management - Expected = Thêm mới thành công.
-2021-11-10 00:19:31,137 INFO  atg.webportal.services.Customer_Management - Compare value = true
-2021-11-10 00:19:31,137 INFO  atg.webportal.services.Customer_Management - ===PASSED===
-2021-11-10 00:19:40,043 INFO  atg.webportal.services.Customer_Management - Actual = 010130642840
-2021-11-10 00:19:40,043 INFO  atg.webportal.services.Customer_Management - Expected = 010130642840
-2021-11-10 00:19:40,044 INFO  atg.webportal.services.Customer_Management - Compare value = true
-2021-11-10 00:19:40,044 INFO  atg.webportal.services.Customer_Management - ===PASSED===
-2021-11-10 00:19:41,086 INFO  atg.webportal.services.Customer_Management - Actual = ATG Name 9600
-2021-11-10 00:19:41,086 INFO  atg.webportal.services.Customer_Management - Expected = ATG Name 9600
-2021-11-10 00:19:41,086 INFO  atg.webportal.services.Customer_Management - Compare value = true
-2021-11-10 00:19:41,086 INFO  atg.webportal.services.Customer_Management - ===PASSED===
-2021-11-10 00:19:46,846 INFO  atg.webportal.services.Customer_Management - Actual = 010130642840
-2021-11-10 00:19:46,846 INFO  atg.webportal.services.Customer_Management - Expected = 010130642840
-2021-11-10 00:19:46,846 INFO  atg.webportal.services.Customer_Management - Compare value = true
-2021-11-10 00:19:46,846 INFO  atg.webportal.services.Customer_Management - ===PASSED===
-2021-11-10 00:19:47,891 INFO  atg.webportal.services.Customer_Management - Actual = ATG Name 9600
-2021-11-10 00:19:47,891 INFO  atg.webportal.services.Customer_Management - Expected = ATG Name 9600
-2021-11-10 00:19:47,891 INFO  atg.webportal.services.Customer_Management - Compare value = true
-2021-11-10 00:19:47,891 INFO  atg.webportal.services.Customer_Management - ===PASSED===
-2021-11-10 00:19:53,655 INFO  atg.webportal.services.Customer_Management - Actual = 010130642840
-2021-11-10 00:19:53,655 INFO  atg.webportal.services.Customer_Management - Expected = 010130642840
-2021-11-10 00:19:53,655 INFO  atg.webportal.services.Customer_Management - Compare value = true
-2021-11-10 00:19:53,655 INFO  atg.webportal.services.Customer_Management - ===PASSED===
-2021-11-10 00:19:54,697 INFO  atg.webportal.services.Customer_Management - Actual = ATG Name 9600
-2021-11-10 00:19:54,697 INFO  atg.webportal.services.Customer_Management - Expected = ATG Name 9600
-2021-11-10 00:19:54,697 INFO  atg.webportal.services.Customer_Management - Compare value = true
-2021-11-10 00:19:54,697 INFO  atg.webportal.services.Customer_Management - ===PASSED===
-2021-11-10 00:20:41,797 INFO  atg.webportal.services.Customer_Management - Actual = Cập nhật thành công.
-2021-11-10 00:20:41,797 INFO  atg.webportal.services.Customer_Management - Expected = Cập nhật thành công.
-2021-11-10 00:20:41,797 INFO  atg.webportal.services.Customer_Management - Compare value = true
-2021-11-10 00:20:41,797 INFO  atg.webportal.services.Customer_Management - ===PASSED===
-2021-11-10 00:20:45,639 INFO  atg.webportal.services.Customer_Management - Actual = -- Vui lòng chọn Thành phố/Tỉnh
-2021-11-10 00:20:45,639 INFO  atg.webportal.services.Customer_Management - Expected = -- Vui lòng chọn Thành phố/Tỉnh
-2021-11-10 00:20:45,639 INFO  atg.webportal.services.Customer_Management - Compare value = true
-2021-11-10 00:20:45,639 INFO  atg.webportal.services.Customer_Management - ===PASSED===
-2021-11-10 00:20:45,698 INFO  atg.webportal.services.Customer_Management - Actual = -- Vui lòng chọn Thành phố/Tỉnh
-2021-11-10 00:20:45,698 INFO  atg.webportal.services.Customer_Management - Expected = -- Vui lòng chọn Thành phố/Tỉnh
-2021-11-10 00:20:45,698 INFO  atg.webportal.services.Customer_Management - Compare value = true
-2021-11-10 00:20:45,698 INFO  atg.webportal.services.Customer_Management - ===PASSED===
-2021-11-10 00:20:46,213 INFO  atg.webportal.services.Customer_Management - OS name = windows 10
-2021-11-10 00:20:46,992 INFO  atg.webportal.services.Customer_Management - ---------- QUIT BROWSER SUCCESS ----------
+2021-11-14 00:10:26,018 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 1: Nhập user name muốn cập nhật
+2021-11-14 00:10:27,164 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 2: Click button Tìm kiếm
+2021-11-14 00:10:30,218 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 3: Click Edit Icon để mở cửa sổ Thông Tin Người Dùng
+2021-11-14 00:10:31,833 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 4: Chọn tab Thông Tin Phân Quyền
+2021-11-14 00:10:32,934 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 5: Chọn Transaction Management Role Group
+2021-11-14 00:10:34,007 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 6: Chọn Card Management Role Group
+2021-11-14 00:10:35,052 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 7: Chọn Customer Management Role Group
+2021-11-14 00:10:36,094 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 8: Chọn Product Management Role Group
+2021-11-14 00:10:37,140 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 9: Chọn Account Management Role Group
+2021-11-14 00:10:38,183 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 10: Chọn User Management Role Group
+2021-11-14 00:10:39,224 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 11: Chọn Marchant Management Role Group
+2021-11-14 00:10:40,268 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 12: Chọn MDR Management Role Group
+2021-11-14 00:10:41,311 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 13: Chọn Notification Management Role Group
+2021-11-14 00:10:42,353 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 13: Chọn Mobile Management Role Group
+2021-11-14 00:10:43,395 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 14: Chọn Report Management Role Group
+2021-11-14 00:10:44,437 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 15: Chọn System Role Group
+2021-11-14 00:10:45,479 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 16: Nhập Ghi Chú
+2021-11-14 00:10:46,573 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 17: Click button Cập nhật
+2021-11-14 00:10:48,525 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 18: Verify câu thông báo sau khi update
+2021-11-14 00:10:48,560 INFO  atg.webportal.administration.User_Management - Actual = Save User Information Success.
+2021-11-14 00:10:48,561 INFO  atg.webportal.administration.User_Management - Expected = Save User Information Success.
+2021-11-14 00:10:48,561 INFO  atg.webportal.administration.User_Management - Compare value = true
+2021-11-14 00:10:48,561 INFO  atg.webportal.administration.User_Management - ===PASSED===
+2021-11-14 00:10:48,561 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 19: Trở về cửa sổ Quản Trị Người Dùng và đóng cửa sổ Thông Tin Người Dùng
+2021-11-14 00:10:48,668 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 19: Trở về cửa sổ Quản Trị Người Dùng và đóng cửa sổ Thông Tin Người Dùng
+2021-11-14 00:10:51,424 INFO  atg.webportal.administration.User_Management - OS name = windows 10
+2021-11-14 00:10:52,236 INFO  atg.webportal.administration.User_Management - ---------- QUIT BROWSER SUCCESS ----------

@@ -17,24 +17,24 @@ public class CustomerInfoPUI {
 	
 	//Address Information
 	public static final String COUNTRY_TEXTBOX = "//input[@id='dnn_ctr1482_CustomerDetail_cboCountryCode_Input']";
-	public static final String COUNTRY_DROPDOWN_ITEMS = "//div[@id='dnn_ctr1482_CustomerDetail_cboCountryCode_DropDown']//ul[@class='rcbList']/li";
+	public static final String COUNTRY_DROPDOWN_LIST = "//div[@id='dnn_ctr1482_CustomerDetail_cboCountryCode_DropDown']//ul[@class='rcbList']/li";
 	public static final String STATECODE_TEXTBOX = "//input[@id='dnn_ctr1482_CustomerDetail_cboStateCode_Input']";
-	public static final String STATECODE_DROPDOWN_ITEMS = "//div[@id='dnn_ctr1482_CustomerDetail_cboStateCode_DropDown']//ul[@class='rcbList']/li";
+	public static final String STATECODE_DROPDOWN_LIST = "//div[@id='dnn_ctr1482_CustomerDetail_cboStateCode_DropDown']//ul[@class='rcbList']/li";
 	public static final String CITYCODE_TEXTBOX = "//input[@id='dnn_ctr1482_CustomerDetail_cboCityCode_Input']";
-	public static final String CITYCODE_DROPDOWN_ITEMS = "//div[@id='dnn_ctr1482_CustomerDetail_cboCityCode_DropDown']//ul[@class='rcbList']/li";
+	public static final String CITYCODE_DROPDOWN_LIST = "//div[@id='dnn_ctr1482_CustomerDetail_cboCityCode_DropDown']//ul[@class='rcbList']/li";
 	
 	//Alternative Address 1 
 	public static final String ALTER_01_COUNTRY_TEXTBOX = "//input[@id='dnn_ctr1482_CustomerDetail_cboAlternative01CountryCode_Input']";
-	public static final String ALTER_01_COUNTRY_DROPDOWN_ITEMS = "//div[@id='dnn_ctr1482_CustomerDetail_cboAlternative01CountryCode_DropDown']//ul[@class='rcbList']/li";
+	public static final String ALTER_01_COUNTRY_DROPDOWN_LIST = "//div[@id='dnn_ctr1482_CustomerDetail_cboAlternative01CountryCode_DropDown']//ul[@class='rcbList']/li";
 	public static final String ALTER_01_STATECODE_TEXTBOX = "//input[@id='dnn_ctr1482_CustomerDetail_cboAlternative01StateCode_Input']";
-	public static final String ALTER_01_STATECODE_DROPDOWN_ITEMS = "//div[@id='dnn_ctr1482_CustomerDetail_cboAlternative01StateCode_DropDown']//ul[@class='rcbList']/li";
+	public static final String ALTER_01_STATECODE_DROPDOWN_LIST = "//div[@id='dnn_ctr1482_CustomerDetail_cboAlternative01StateCode_DropDown']//ul[@class='rcbList']/li";
 	
 	
 	//Alternative Address 2
 	public static final String ALTER_02_COUNTRY_TEXTBOX = "//input[@id='dnn_ctr1482_CustomerDetail_cboAlternative02CountryCode_Input']";
-	public static final String ALTER_02_COUNTRY_DROPDOWN_ITEMS = "//div[@id='dnn_ctr1482_CustomerDetail_cboAlternative02CountryCode_DropDown']//ul[@class='rcbList']/li";
+	public static final String ALTER_02_COUNTRY_DROPDOWN_LIST = "//div[@id='dnn_ctr1482_CustomerDetail_cboAlternative02CountryCode_DropDown']//ul[@class='rcbList']/li";
 	public static final String ALTER_02_STATECODE_TEXTBOX = "//input[@id='dnn_ctr1482_CustomerDetail_cboAlternative02StateCode_Input']";
-	public static final String ALTER_02_STATECODE_DROPDOWN_ITEMS = "//div[@id='dnn_ctr1482_CustomerDetail_cboAlternative02StateCode_DropDown']//ul[@class='rcbList']/li";
+	public static final String ALTER_02_STATECODE_DROPDOWN_LIST = "//div[@id='dnn_ctr1482_CustomerDetail_cboAlternative02StateCode_DropDown']//ul[@class='rcbList']/li";
 	
 	
 	//Saving

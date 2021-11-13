@@ -24,19 +24,23 @@ public class HomePO extends AbstractPage {
 		return PageGeneratorManager.getCustomerManagementPage(driver);
 	}
 
-	public void clickToLogout() {
-		// TODO Auto-generated method stub
-
-	}
-
 	public UserManagementPO selectMenuUserManagement() {
-		waitForElementVisible(driver, AbstractPUI.TOPMENU_DICHVU_LINK);
-		hoverMouseToElement(driver, AbstractPUI.TOPMENU_DICHVU_LINK);
+		waitForElementVisible(driver, AbstractPUI.TOPMENU_QUANTRI_LINK);
+		hoverMouseToElement(driver, AbstractPUI.TOPMENU_QUANTRI_LINK);
 		sleepInSecond(driver, Constants.SHORT_SECOND);
-		waitForElementVisible(driver, AbstractPUI.TOPMENU_DICHVU_QLKH_LINK);
-		clickToElement(driver, AbstractPUI.TOPMENU_DICHVU_QLKH_LINK);
+		waitForElementVisible(driver, AbstractPUI.TOPMENU_QUANTRI_QTND_LINK);
+		clickToElement(driver, AbstractPUI.TOPMENU_QUANTRI_QTND_LINK);
 
 		return PageGeneratorManager.getUserManagementPage(driver);
+	}
+
+	public void selectLogout() {
+		waitForElementVisible(driver, AbstractPUI.TOPMENU_PROFILE_ICON);
+		hoverMouseToElement(driver, AbstractPUI.TOPMENU_PROFILE_ICON);
+		sleepInSecond(driver, Constants.SHORT_SECOND);
+		waitForElementVisible(driver, AbstractPUI.TOPMENU_LOGOUT_LINK);
+		clickToElement(driver, AbstractPUI.TOPMENU_LOGOUT_LINK);
+		
 	}
 
 }

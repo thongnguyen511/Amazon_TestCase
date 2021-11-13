@@ -34,11 +34,10 @@ public class CustomerManagementPO extends AbstractPage {
 		sleepInSecond(driver, Constants.SHORT_SECOND);
 	}
 
-	public void clickInquiryButton() {
-		waitForElementVisible(driver, CustomerManagementPUI.INQUIRY_BUTTON);
-		clickToElement(driver, CustomerManagementPUI.INQUIRY_BUTTON);
+	public void clickSearchButton() {
+		waitForElementVisible(driver, CustomerManagementPUI.SEARCH_BUTTON);
+		clickToElement(driver, CustomerManagementPUI.SEARCH_BUTTON);
 		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
-//		sleepInSecond(driver, Constants.SHORT_SECOND);
 	}
 
 	public String getIdentificationIdFromSearchReult() {
@@ -77,7 +76,7 @@ public class CustomerManagementPO extends AbstractPage {
 	}
 
 	public CustomerInfoPO clickEditCustomerIcon(String customerID) {
-		waitForElementVisible(driver, CustomerManagementPUI.EDIT_CUSTOMER_ICON, customerID);
+		waitForElementClickable(driver, CustomerManagementPUI.EDIT_CUSTOMER_ICON, customerID);
 		clickToElement(driver, CustomerManagementPUI.EDIT_CUSTOMER_ICON, customerID);
 		switchToWindowByTitle(driver, "Hung Thinh Portal > Services > Customers > Customer Information");
 		return PageGeneratorManager.getCustomerInfoPage(driver);

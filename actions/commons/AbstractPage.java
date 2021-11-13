@@ -196,6 +196,14 @@ public class AbstractPage {
 		}
 	}
 
+	public void checkToCheckbox(WebDriver driver, String locator, String... dynamicValues) {
+		locator = String.format(locator, (Object[]) dynamicValues);
+		element = driver.findElement(By.xpath(locator));
+		if (!element.isSelected()) {
+			element.click();
+		}
+	}
+
 	public void uncheckToCheckbox(WebDriver driver, String locator) {
 		elements = driver.findElements(By.xpath(locator));
 		if (element.isSelected()) {
@@ -203,6 +211,14 @@ public class AbstractPage {
 		}
 	}
 
+	public void uncheckToCheckbox(WebDriver driver, String locator, String... dynamicValues) {
+		locator = String.format(locator, (Object[]) dynamicValues);
+		element = driver.findElement(By.xpath(locator));
+		if (element.isSelected()) {
+			element.click();
+		}
+	}
+	
 	public boolean isControlDisplayed(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		return element.isDisplayed();
@@ -321,8 +337,7 @@ public class AbstractPage {
 
 	public boolean verifyTextInInnerText(WebDriver driver, String textExpected) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		String textActual = (String) js
-				.executeScript("return document.documentElement.innerText.match('" + textExpected + "')[0]");
+		String textActual = (String) js.executeScript("return document.documentElement.innerText.match('" + textExpected + "')[0]");
 		System.out.println("Text actual = " + textActual);
 		return textActual.equals(textExpected);
 	}
@@ -346,6 +361,14 @@ public class AbstractPage {
 		js.executeScript("arguments[0].click();", element);
 	}
 
+	public void clickToElementByJS(WebDriver driver, String locator, String...values) {
+		locator = String.format(locator, (Object[]) values);
+		scrollToElement(driver, locator);
+		element = driver.findElement(By.xpath(locator));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+	}
+	
 	public void scrollToElement(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -380,19 +403,27 @@ public class AbstractPage {
 		waitExplicit.until(ExpectedConditions.presenceOfElementLocated(byLocator));
 	}
 
-	public void waitForElementVisible(WebDriver driver, String locator, String... values) {
-		locator = String.format(locator, (Object[]) values);
-		waitExplicit = new WebDriverWait(driver, longTimeout);
-		byLocator = By.xpath(locator);
-		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
-	}
-
 	public void waitForElementClickable(WebDriver driver, String locator) {
 		waitExplicit = new WebDriverWait(driver, longTimeout);
 		byLocator = By.xpath(locator);
 		waitExplicit.until(ExpectedConditions.elementToBeClickable(byLocator));
 	}
 
+	public void waitForElementClickable(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		waitExplicit = new WebDriverWait(driver, longTimeout);
+		byLocator = By.xpath(locator);
+		waitExplicit.until(ExpectedConditions.elementToBeClickable(byLocator));
+	}
+	
+	public void waitForElementVisible(WebDriver driver, String locator) {
+		waitExplicit = new WebDriverWait(driver, longTimeout);
+		byLocator = By.xpath(locator);
+		overrideGlobalTimeout(driver, Constants.SHORT_TIMEOUT);
+		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
+		overrideGlobalTimeout(driver, Constants.LONG_TIMEOUT);
+	}
+	
 	public void waitForElementInvisible(WebDriver driver, String locator) {
 		waitExplicit = new WebDriverWait(driver, longTimeout);
 		byLocator = By.xpath(locator);

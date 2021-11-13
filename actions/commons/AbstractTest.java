@@ -189,16 +189,6 @@ public class AbstractTest {
 		}
 	}
 	
-	protected int random4DigitNumber() {
-		Random random = new Random();
-		return random.nextInt(9999);
-	}
-
-	protected int randomPhoneNumber() {
-		Random random = new Random();
-		return random.nextInt(9999999);
-	}
-
 	protected String getNextDate(int numberofDays) {
 		Calendar c = Calendar.getInstance();
 		c.add(Calendar.DAY_OF_MONTH, numberofDays);
@@ -224,6 +214,18 @@ public class AbstractTest {
 			sb.append(ch);         
 		}         
 		return sb.toString();     
-	}     
+	}
+	
+	/**      * Random string with 0-9, not included special characters      */     
+	protected String randomNumeric(int numberOfCharactor) {  
+		final String STRING_NUMERIC = "0123456789"; 
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < numberOfCharactor; i++) { 
+			int number = randomNumber(0, STRING_NUMERIC.length() - 1);            
+			char ch = STRING_NUMERIC.charAt(number);             
+			sb.append(ch);         
+		}         
+		return sb.toString();     
+	}
 	 
 }

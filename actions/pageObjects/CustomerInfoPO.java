@@ -88,7 +88,7 @@ public class CustomerInfoPO extends AbstractPage {
 
 	public void selectState(String stateName) throws Exception {
 		waitForElementVisible(driver, CustomerInfoPUI.STATECODE_TEXTBOX);
-		selectItemInDropdown(driver, CustomerInfoPUI.STATECODE_TEXTBOX, CustomerInfoPUI.STATECODE_DROPDOWN_ITEMS, stateName);
+		selectItemInDropdown(driver, CustomerInfoPUI.STATECODE_TEXTBOX, CustomerInfoPUI.STATECODE_DROPDOWN_LIST, stateName);
 		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
 	}
 
@@ -129,12 +129,12 @@ public class CustomerInfoPO extends AbstractPage {
 
 	public void selectWard(String wardName) throws Exception {
 		waitForElementVisible(driver, CustomerInfoPUI.CITYCODE_TEXTBOX);
-		selectItemInDropdown(driver, CustomerInfoPUI.CITYCODE_TEXTBOX, CustomerInfoPUI.CITYCODE_DROPDOWN_ITEMS, wardName);
+		selectItemInDropdown(driver, CustomerInfoPUI.CITYCODE_TEXTBOX, CustomerInfoPUI.CITYCODE_DROPDOWN_LIST, wardName);
 		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
 	}
 
 	public void clickUpdateButton() {
-		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
+
 		waitForElementClickable(driver, CustomerInfoPUI.UPDATE_BUTTON);
 		clickToElement(driver, CustomerInfoPUI.UPDATE_BUTTON);
 		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
@@ -148,22 +148,21 @@ public class CustomerInfoPO extends AbstractPage {
 
 	public void selectCountry(String countryName) throws Exception {
 		waitForElementVisible(driver, CustomerInfoPUI.COUNTRY_TEXTBOX);
-		selectItemInDropdown(driver, CustomerInfoPUI.COUNTRY_TEXTBOX, CustomerInfoPUI.COUNTRY_DROPDOWN_ITEMS,countryName);
+		selectItemInDropdown(driver, CustomerInfoPUI.COUNTRY_TEXTBOX, CustomerInfoPUI.COUNTRY_DROPDOWN_LIST,countryName);
 		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
 	}
 
 	public void selectAlter01Country(String alter01_CountryName) throws Exception {
 		waitForElementVisible(driver, CustomerInfoPUI.ALTER_01_COUNTRY_TEXTBOX);
-		selectItemInDropdown(driver, CustomerInfoPUI.ALTER_01_COUNTRY_TEXTBOX, CustomerInfoPUI.ALTER_01_COUNTRY_DROPDOWN_ITEMS,alter01_CountryName);
+		selectItemInDropdown(driver, CustomerInfoPUI.ALTER_01_COUNTRY_TEXTBOX, CustomerInfoPUI.ALTER_01_COUNTRY_DROPDOWN_LIST,alter01_CountryName);
 		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
 		
 	}
 
 	public void selectAlter02Country(String alter01_CountryName) throws Exception {
 		waitForElementVisible(driver, CustomerInfoPUI.ALTER_02_COUNTRY_TEXTBOX);
-		selectItemInDropdown(driver, CustomerInfoPUI.ALTER_02_COUNTRY_TEXTBOX, CustomerInfoPUI.ALTER_02_COUNTRY_DROPDOWN_ITEMS,alter01_CountryName);
+		selectItemInDropdown(driver, CustomerInfoPUI.ALTER_02_COUNTRY_TEXTBOX, CustomerInfoPUI.ALTER_02_COUNTRY_DROPDOWN_LIST,alter01_CountryName);
 		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
-
 		
 	}
 

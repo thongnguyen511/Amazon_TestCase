@@ -3,6 +3,7 @@ package commons;
 import org.openqa.selenium.WebDriver;
 import pageObjects.HomePO;
 import pageObjects.LoginPO;
+import pageObjects.UserInfoPO;
 import pageObjects.UserManagementPO;
 import pageObjects.CustomerInfoPO;
 import pageObjects.CustomerManagementPO;
@@ -26,5 +27,9 @@ public class PageGeneratorManager {
 
 	public static UserManagementPO getUserManagementPage(WebDriver driver) {
 		return new UserManagementPO(driver);
+	}
+
+	public static UserInfoPO getUserInfoPage(WebDriver driver) {
+		return new UserInfoPO(driver);
 	}
 }

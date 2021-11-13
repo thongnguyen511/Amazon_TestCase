@@ -34,13 +34,13 @@ public class Customer_Management extends AbstractTest {
 		// Test Data
 		String messageAfterSave;
 
-		identificationID = "0101" + random4DigitNumber() + random4DigitNumber();
+		identificationID = randomNumeric(12);
 		identificationDateIssue = "01/01/2020";
 		identificationPlaceIssue = "Ho Chi Minh";
-		fullName = "ATG Name " + random4DigitNumber();
+		fullName = "ATG Name " + randomNumeric(5);
 		birthDate = "01/01/1990";
-		phoneNumber = "090" + randomPhoneNumber();
-		email = "atg" + random4DigitNumber() + "@gmail.com";
+		phoneNumber = "090" + randomNumeric(7);
+		email = "atg" + randomNumeric(5) + "@gmail.com";
 		partnerUserId = randomAlphaNumeric(10);
 
 		customerManagementPage = homePage.selectMenuCustomerManagement();
@@ -66,7 +66,7 @@ public class Customer_Management extends AbstractTest {
 		String actualIdentificationId, actualFullName;
 
 		customerManagementPage.enterIdentificationIdToSearch(identificationID);
-		customerManagementPage.clickInquiryButton();
+		customerManagementPage.clickSearchButton();
 		actualIdentificationId = customerManagementPage.getIdentificationIdFromSearchReult();
 		verifyEquals(actualIdentificationId, identificationID);
 
@@ -75,7 +75,7 @@ public class Customer_Management extends AbstractTest {
 
 		// Clear IdentificationId value from the textbox
 		customerManagementPage.enterIdentificationIdToSearch("");
-		customerManagementPage.clickInquiryButton();
+		customerManagementPage.clickSearchButton();
 	}
 
 	@Test
@@ -83,7 +83,7 @@ public class Customer_Management extends AbstractTest {
 		String actualIdentificationId, actualFullName;
 
 		customerManagementPage.enterFullNameToSearch(fullName);
-		customerManagementPage.clickInquiryButton();
+		customerManagementPage.clickSearchButton();
 		actualIdentificationId = customerManagementPage.getIdentificationIdFromSearchReult();
 		verifyEquals(actualIdentificationId, identificationID);
 
@@ -92,7 +92,7 @@ public class Customer_Management extends AbstractTest {
 
 		// Clear FullName value from the textbox
 		customerManagementPage.enterFullNameToSearch("");
-		customerManagementPage.clickInquiryButton();
+		customerManagementPage.clickSearchButton();
 	}
 
 	@Test
@@ -100,7 +100,7 @@ public class Customer_Management extends AbstractTest {
 		String actualIdentificationId, actualFullName;
 
 		customerManagementPage.enterPhoneNumberToSearch(phoneNumber);
-		customerManagementPage.clickInquiryButton();
+		customerManagementPage.clickSearchButton();
 		actualIdentificationId = customerManagementPage.getIdentificationIdFromSearchReult();
 		verifyEquals(actualIdentificationId, identificationID);
 
@@ -109,7 +109,7 @@ public class Customer_Management extends AbstractTest {
 
 		// Clear FullName value from the textbox
 		customerManagementPage.enterPhoneNumberToSearch("");
-		customerManagementPage.clickInquiryButton();
+		customerManagementPage.clickSearchButton();
 	}
 
 	@Test
@@ -125,8 +125,8 @@ public class Customer_Management extends AbstractTest {
 		
 		raceInfo = "Kinh";
 		religionInfo = "Phật Giáo";
-		homePhone = "028" + randomPhoneNumber();
-		companyPhone = "028" + randomPhoneNumber();
+		homePhone = "028" + randomNumeric(6);
+		companyPhone = "028" + randomNumeric(6);
 		countryName = "VN - VIET NAM";
 		stateName = "79 - HO CHI MINH";
 		wardName = "768 - PHU NHUAN";
@@ -134,7 +134,7 @@ public class Customer_Management extends AbstractTest {
 		alter02CountryName = "VN - VIET NAM";
 
 		customerManagementPage.enterIdentificationIdToSearch(identificationID);
-		customerManagementPage.clickInquiryButton();
+		customerManagementPage.clickSearchButton();
 		customerID = customerManagementPage.getCustomerIdFromSearchReult();
 		customerInfoPage = customerManagementPage.clickEditCustomerIcon(customerID);
 		customerInfoPage.enterRace(raceInfo);
@@ -167,7 +167,7 @@ public class Customer_Management extends AbstractTest {
 
 	@AfterClass
 	public void afterClass() {
-		homePage.clickToLogout();
+		homePage.selectLogout();
 		closeBrowserAndDriver(driver);
 	}
 }
