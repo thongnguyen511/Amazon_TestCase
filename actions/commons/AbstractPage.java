@@ -424,6 +424,15 @@ public class AbstractPage {
 		overrideGlobalTimeout(driver, Constants.LONG_TIMEOUT);
 	}
 	
+	public void waitForElementVisible(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		waitExplicit = new WebDriverWait(driver, longTimeout);
+		byLocator = By.xpath(locator);
+		overrideGlobalTimeout(driver, Constants.SHORT_TIMEOUT);
+		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
+		overrideGlobalTimeout(driver, Constants.LONG_TIMEOUT);
+	}
+	
 	public void waitForElementInvisible(WebDriver driver, String locator) {
 		waitExplicit = new WebDriverWait(driver, longTimeout);
 		byLocator = By.xpath(locator);

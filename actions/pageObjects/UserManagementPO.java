@@ -48,5 +48,9 @@ public class UserManagementPO extends AbstractPage {
 		return PageGeneratorManager.getUserInfoPage(driver);
 	}
 
+	public String getUserStatus(String userName) {
+		return getTextInElement(driver, UserManagementPUI.USER_STATUS_TEXT, userName);
+	}
+
 
 }

@@ -167,7 +167,7 @@ public class Customer_Management extends AbstractTest {
 
 	@AfterClass
 	public void afterClass() {
-		homePage.selectLogout();
+		homePage.Logout();
 		closeBrowserAndDriver(driver);
 	}
 }

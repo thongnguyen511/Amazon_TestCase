@@ -1,27 +1,41 @@
-2021-11-14 00:10:26,018 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 1: Nhập user name muốn cập nhật
-2021-11-14 00:10:27,164 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 2: Click button Tìm kiếm
-2021-11-14 00:10:30,218 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 3: Click Edit Icon để mở cửa sổ Thông Tin Người Dùng
-2021-11-14 00:10:31,833 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 4: Chọn tab Thông Tin Phân Quyền
-2021-11-14 00:10:32,934 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 5: Chọn Transaction Management Role Group
-2021-11-14 00:10:34,007 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 6: Chọn Card Management Role Group
-2021-11-14 00:10:35,052 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 7: Chọn Customer Management Role Group
-2021-11-14 00:10:36,094 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 8: Chọn Product Management Role Group
-2021-11-14 00:10:37,140 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 9: Chọn Account Management Role Group
-2021-11-14 00:10:38,183 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 10: Chọn User Management Role Group
-2021-11-14 00:10:39,224 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 11: Chọn Marchant Management Role Group
-2021-11-14 00:10:40,268 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 12: Chọn MDR Management Role Group
-2021-11-14 00:10:41,311 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 13: Chọn Notification Management Role Group
-2021-11-14 00:10:42,353 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 13: Chọn Mobile Management Role Group
-2021-11-14 00:10:43,395 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 14: Chọn Report Management Role Group
-2021-11-14 00:10:44,437 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 15: Chọn System Role Group
-2021-11-14 00:10:45,479 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 16: Nhập Ghi Chú
-2021-11-14 00:10:46,573 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 17: Click button Cập nhật
-2021-11-14 00:10:48,525 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 18: Verify câu thông báo sau khi update
-2021-11-14 00:10:48,560 INFO  atg.webportal.administration.User_Management - Actual = Save User Information Success.
-2021-11-14 00:10:48,561 INFO  atg.webportal.administration.User_Management - Expected = Save User Information Success.
-2021-11-14 00:10:48,561 INFO  atg.webportal.administration.User_Management - Compare value = true
-2021-11-14 00:10:48,561 INFO  atg.webportal.administration.User_Management - ===PASSED===
-2021-11-14 00:10:48,561 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 19: Trở về cửa sổ Quản Trị Người Dùng và đóng cửa sổ Thông Tin Người Dùng
-2021-11-14 00:10:48,668 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMarchantUser - Step 19: Trở về cửa sổ Quản Trị Người Dùng và đóng cửa sổ Thông Tin Người Dùng
-2021-11-14 00:10:51,424 INFO  atg.webportal.administration.User_Management - OS name = windows 10
-2021-11-14 00:10:52,236 INFO  atg.webportal.administration.User_Management - ---------- QUIT BROWSER SUCCESS ----------
+2021-11-20 16:57:54,752 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 1: Chọn Menu Dịch Vụ > Quản Lý Sản Phẩm
+2021-11-20 16:57:59,013 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 2: Chọn button Thêm mới
+2021-11-20 16:58:00,083 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 3: Nhập mã sản phẩm
+2021-11-20 16:58:01,168 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 4: Nhập tên sản phẩm
+2021-11-20 16:58:02,298 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 5: Nhập hạn mức sản phẩm
+2021-11-20 16:58:03,385 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 6: Nhập hạn mức trong ngày
+2021-11-20 16:58:04,461 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 7: Nhập ghi chú
+2021-11-20 16:58:05,544 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 8: Chọn button Lưu
+2021-11-20 16:58:07,945 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 9: Verify thông báo trả về sau khi lưu
+2021-11-20 16:58:07,987 INFO  atg.webportal.services.Product_Management - Actual = Thêm mới thành công.
+2021-11-20 16:58:07,987 INFO  atg.webportal.services.Product_Management - Expected = Thêm mới thành công.
+2021-11-20 16:58:07,988 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-20 16:58:07,988 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-20 16:58:07,988 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 10: Chọn button Đồng ý
+2021-11-20 16:58:09,764 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 11: Quay về trang quản lý sản phẩm
+2021-11-20 16:58:13,114 INFO  atg.webportal.services.Product_Management - Actual = 161818
+2021-11-20 16:58:13,114 INFO  atg.webportal.services.Product_Management - Expected = 161818
+2021-11-20 16:58:13,114 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-20 16:58:13,114 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-20 16:58:13,157 INFO  atg.webportal.services.Product_Management - Actual = Auto Product Name 161818
+2021-11-20 16:58:13,158 INFO  atg.webportal.services.Product_Management - Expected = Auto Product Name 161818
+2021-11-20 16:58:13,158 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-20 16:58:13,158 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-20 16:58:13,199 INFO  atg.webportal.services.Product_Management - Actual = 1,000,000,000.0
+2021-11-20 16:58:13,199 INFO  atg.webportal.services.Product_Management - Expected = 1,000,000,000.0
+2021-11-20 16:58:13,199 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-20 16:58:13,199 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-20 16:58:13,240 INFO  atg.webportal.services.Product_Management - Actual = 50,000,000.0
+2021-11-20 16:58:13,240 INFO  atg.webportal.services.Product_Management - Expected = 50,000,000.0
+2021-11-20 16:58:13,240 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-20 16:58:13,240 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-20 16:58:13,281 INFO  atg.webportal.services.Product_Management - Actual = Create Name Product
+2021-11-20 16:58:13,281 INFO  atg.webportal.services.Product_Management - Expected = Create Name Product
+2021-11-20 16:58:13,281 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-20 16:58:13,281 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-20 16:58:13,324 INFO  atg.webportal.services.Product_Management - Actual = Có
+2021-11-20 16:58:13,324 INFO  atg.webportal.services.Product_Management - Expected = Có
+2021-11-20 16:58:13,324 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-20 16:58:13,324 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-20 16:58:21,151 INFO  atg.webportal.services.Product_Management - OS name = windows 10
+2021-11-20 16:58:21,947 INFO  atg.webportal.services.Product_Management - ---------- QUIT BROWSER SUCCESS ----------

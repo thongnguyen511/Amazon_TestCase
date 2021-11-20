@@ -66,7 +66,7 @@ public class UserInfoPO extends AbstractPage {
 		waitForElementClickable(driver, UserInfoPUI.SAVE_BUTTON);
 		clickToElement(driver, UserInfoPUI.SAVE_BUTTON);
 		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
-		
+		sleepInSecond(driver, Constants.SHORT_SECOND);
 	}
 
 	public String getMessageAfterSave() {
@@ -91,7 +91,6 @@ public class UserInfoPO extends AbstractPage {
 	}
 
 	public void selectRoleGroupCheckbox(String roleGroupName) {
-//		waitForElementClickable(driver, UserInfoPUI.ROLE_GROUP_CHECKBOX, roleGroupName);
 		clickToElementByJS(driver, UserInfoPUI.ROLE_GROUP_CHECKBOX, roleGroupName);
 		sleepInSecond(driver, Constants.SHORT_SECOND);
 	}
@@ -100,11 +99,13 @@ public class UserInfoPO extends AbstractPage {
 		waitForElementClickable(driver, UserInfoPUI.UPDATE_BUTTON);
 		clickToElement(driver, UserInfoPUI.UPDATE_BUTTON);
 		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
+		sleepInSecond(driver, Constants.SHORT_SECOND);
 	}
 
-	public String getMessageAfterUpdate() {
-		waitForElementPresence(driver, UserInfoPUI.MESSAGE_AFTER_UPDATE);
-		return getTextElement(driver, UserInfoPUI.MESSAGE_AFTER_UPDATE);
+	public String getMessageAfterUpdateOrDisableOrEnable() {
+		waitForElementPresence(driver, UserInfoPUI.MESSAGE_AFTER_UPDATEORDISABLED);
+		sleepInSecond(driver, Constants.SHORT_SECOND);
+		return getTextElement(driver, UserInfoPUI.MESSAGE_AFTER_UPDATEORDISABLED);
 	}
 
 	public void selectRoleInfoTab() {
@@ -118,6 +119,27 @@ public class UserInfoPO extends AbstractPage {
 		sendkeyToElement(driver, UserInfoPUI.ROLE_REMARK_TEXTAREA, string);
 		sleepInSecond(driver, Constants.SHORT_SECOND);
 		
+	}
+
+	public void clickDisableButton() {
+		waitForElementVisible(driver, UserInfoPUI.DISABLE_BUTTON);
+		clickToElement(driver, UserInfoPUI.DISABLE_BUTTON);
+		sleepInSecond(driver, Constants.SHORT_SECOND);
+		
+	}
+
+	public void clickAcceptButton() {
+		waitForElementVisible(driver, UserInfoPUI.ACCEPT_BUTTON);
+		clickToElement(driver, UserInfoPUI.ACCEPT_BUTTON);
+		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
+		sleepInSecond(driver, Constants.SHORT_SECOND);
+		
+	}
+
+	public void clickEnableButton() {
+		waitForElementVisible(driver, UserInfoPUI.ENABLE_BUTTON);
+		clickToElement(driver, UserInfoPUI.ENABLE_BUTTON);
+		sleepInSecond(driver, Constants.SHORT_SECOND);
 	}
 
 
