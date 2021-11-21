@@ -40,13 +40,13 @@ public class CustomerManagementPO extends AbstractPage {
 		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
 	}
 
-	public String getIdentificationIdFromSearchReult() {
+	public String getIdentificationIdFromSearchResult() {
 		waitForElementVisible(driver, CustomerManagementPUI.IDENTIFICATION_ID_AT_FIRSTROW);
 		sleepInSecond(driver, Constants.SHORT_SECOND);
 		return getTextElement(driver, CustomerManagementPUI.IDENTIFICATION_ID_AT_FIRSTROW);
 	}
 
-	public String getFullNameFromSearchReult() {
+	public String getFullNameFromSearchResult() {
 		waitForElementVisible(driver, CustomerManagementPUI.FULLNAME_AT_FIRSTROW);
 		sleepInSecond(driver, Constants.SHORT_SECOND);
 		return getTextElement(driver, CustomerManagementPUI.FULLNAME_AT_FIRSTROW);
@@ -69,7 +69,7 @@ public class CustomerManagementPO extends AbstractPage {
 		
 	}
 
-	public String getCustomerIdFromSearchReult() {
+	public String getCustomerIdFromSearchResult() {
 		waitForElementVisible(driver, CustomerManagementPUI.CUSTOMER_ID_AT_FIRSTROW);
 		sleepInSecond(driver, Constants.SHORT_SECOND);
 		return getTextElement(driver, CustomerManagementPUI.CUSTOMER_ID_AT_FIRSTROW);

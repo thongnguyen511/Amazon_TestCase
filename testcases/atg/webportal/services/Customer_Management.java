@@ -67,10 +67,10 @@ public class Customer_Management extends AbstractTest {
 
 		customerManagementPage.enterIdentificationIdToSearch(identificationID);
 		customerManagementPage.clickSearchButton();
-		actualIdentificationId = customerManagementPage.getIdentificationIdFromSearchReult();
+		actualIdentificationId = customerManagementPage.getIdentificationIdFromSearchResult();
 		verifyEquals(actualIdentificationId, identificationID);
 
-		actualFullName = customerManagementPage.getFullNameFromSearchReult();
+		actualFullName = customerManagementPage.getFullNameFromSearchResult();
 		verifyEquals(actualFullName, fullName);
 
 		// Clear IdentificationId value from the textbox
@@ -84,10 +84,10 @@ public class Customer_Management extends AbstractTest {
 
 		customerManagementPage.enterFullNameToSearch(fullName);
 		customerManagementPage.clickSearchButton();
-		actualIdentificationId = customerManagementPage.getIdentificationIdFromSearchReult();
+		actualIdentificationId = customerManagementPage.getIdentificationIdFromSearchResult();
 		verifyEquals(actualIdentificationId, identificationID);
 
-		actualFullName = customerManagementPage.getFullNameFromSearchReult();
+		actualFullName = customerManagementPage.getFullNameFromSearchResult();
 		verifyEquals(actualFullName, fullName);
 
 		// Clear FullName value from the textbox
@@ -101,10 +101,10 @@ public class Customer_Management extends AbstractTest {
 
 		customerManagementPage.enterPhoneNumberToSearch(phoneNumber);
 		customerManagementPage.clickSearchButton();
-		actualIdentificationId = customerManagementPage.getIdentificationIdFromSearchReult();
+		actualIdentificationId = customerManagementPage.getIdentificationIdFromSearchResult();
 		verifyEquals(actualIdentificationId, identificationID);
 
-		actualFullName = customerManagementPage.getFullNameFromSearchReult();
+		actualFullName = customerManagementPage.getFullNameFromSearchResult();
 		verifyEquals(actualFullName, fullName);
 
 		// Clear FullName value from the textbox
@@ -135,7 +135,7 @@ public class Customer_Management extends AbstractTest {
 
 		customerManagementPage.enterIdentificationIdToSearch(identificationID);
 		customerManagementPage.clickSearchButton();
-		customerID = customerManagementPage.getCustomerIdFromSearchReult();
+		customerID = customerManagementPage.getCustomerIdFromSearchResult();
 		customerInfoPage = customerManagementPage.clickEditCustomerIcon(customerID);
 		customerInfoPage.enterRace(raceInfo);
 		customerInfoPage.enterReligion(religionInfo);

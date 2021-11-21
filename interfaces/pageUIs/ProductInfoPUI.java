@@ -11,5 +11,7 @@ public class ProductInfoPUI {
 	public static final String SAVE_BUTTON = "//a[@id='dnn_ctr1491_ProductInformation_btnInsert']";
 	public static final String MESSAGE_AFTER_SAVE = "//span[contains(text(),'Thêm mới thành công.')]";
 	public static final String ACCEPT_BUTTON_AFTER_SAVE = "//button[@class = 'btn btn-primary ui-button ui-corner-all ui-widget']";
+	public static final String UPDATE_BUTTON = "//a[@id='dnn_ctr1491_ProductInformation_btnUpdate']";
+	public static final String NOTIFY_AFTER_UPDATE = "//div[@class='n-info-notify c-square']";
 
 }

@@ -84,4 +84,42 @@ public class ProductInfoPO extends AbstractPage {
 		
 	}
 
+	public void clearProductName() {
+		waitForElementVisible(driver, ProductInfoPUI.PRODUCT_NAME_TEXTBOX);
+		clearTextbox(driver, ProductInfoPUI.PRODUCT_NAME_TEXTBOX);
+		sleepInSecond(driver, Constants.SHORT_SECOND);
+	}
+
+	public void clearProductLimitation() {
+		waitForElementVisible(driver, ProductInfoPUI.PRODUCT_LIMITATION_TEXTBOX);
+		clearTextbox(driver, ProductInfoPUI.PRODUCT_LIMITATION_TEXTBOX);
+		sleepInSecond(driver, Constants.SHORT_SECOND);
+		
+	}
+
+	public void clearProductDailyLimitation() {
+		waitForElementVisible(driver, ProductInfoPUI.PRODUCT_DAILY_LIMITATION_TEXTBOX);
+		clearTextbox(driver, ProductInfoPUI.PRODUCT_DAILY_LIMITATION_TEXTBOX);
+		sleepInSecond(driver, Constants.SHORT_SECOND);
+		
+	}
+
+	public void clearRemark() {
+		waitForElementVisible(driver, ProductInfoPUI.REMARK_TEXTAREA);
+		clearTextbox(driver, ProductInfoPUI.REMARK_TEXTAREA);
+		sleepInSecond(driver, Constants.SHORT_SECOND);
+		
+	}
+
+	public void clickUpdateButton() {
+		waitForElementClickable(driver, ProductInfoPUI.UPDATE_BUTTON);
+		clickToElement(driver, ProductInfoPUI.UPDATE_BUTTON);
+		waitForElementPresence(driver, AbstractPUI.LOADING_ICON_UNDISP);
+	}
+
+	public String getMessageAfterUpdate() {
+		waitForElementVisible(driver, ProductInfoPUI.NOTIFY_AFTER_UPDATE);
+		return getTextElement(driver, CustomerInfoPUI.NOTIFY_AFTER_UPDATE);
+	}
+
 }
