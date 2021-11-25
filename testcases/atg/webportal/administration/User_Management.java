@@ -174,7 +174,7 @@ public class User_Management extends AbstractTest {
 		
 		log.info("TC_03_DisabledUser - Step 6: Kiểm tra message 'Disable Account Success.");
 		messageAfterDisable = userInfoPage.getMessageAfterUpdateOrDisableOrEnable();
-		verifyEquals(messageAfterDisable, "Khóa tài khoản thành công.");
+		verifyEquals(messageAfterDisable, "Khóa người dùng thành công.");
 		
 		log.info("TC_03_DisabledUser - Step 7: Trở về cửa sổ Quản Trị Người Dùng và đóng cửa sổ Thông Tin Người Dùng");
 		userManagementPage = userInfoPage.returnToUserManagementPage();
@@ -211,7 +211,7 @@ public class User_Management extends AbstractTest {
 		
 		log.info("TC_04_EnableUser - Step 6: Kiểm tra message 'Enable Account Success.");
 		messageAfterEnable = userInfoPage.getMessageAfterUpdateOrDisableOrEnable();
-		verifyEquals(messageAfterEnable, "Kích hoạt tài khoản thành công.");
+		verifyEquals(messageAfterEnable, "Kích hoạt người dùng thành công.");
 		
 		log.info("TC_04_EnableUser - Step 7: Trở về cửa sổ Quản Trị Người Dùng và đóng cửa sổ Thông Tin Người Dùng");
 		userManagementPage = userInfoPage.returnToUserManagementPage();

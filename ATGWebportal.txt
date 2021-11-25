@@ -1,136 +1,260 @@
-2021-11-22 01:05:19,041 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 1: Chọn Menu Dịch Vụ > Quản Lý Sản Phẩm
-2021-11-22 01:05:23,246 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 2: Chọn button Thêm mới
-2021-11-22 01:05:24,263 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 3: Nhập mã sản phẩm
-2021-11-22 01:05:25,360 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 4: Nhập tên sản phẩm
-2021-11-22 01:05:26,483 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 5: Nhập hạn mức sản phẩm
-2021-11-22 01:05:27,560 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 6: Nhập hạn mức trong ngày
-2021-11-22 01:05:28,639 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 7: Nhập ghi chú
-2021-11-22 01:05:29,720 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 8: Chọn button Lưu
-2021-11-22 01:05:32,072 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 9: Verify thông báo trả về sau khi lưu
-2021-11-22 01:05:32,115 INFO  atg.webportal.services.Product_Management - Actual = Thêm mới thành công.
-2021-11-22 01:05:32,115 INFO  atg.webportal.services.Product_Management - Expected = Thêm mới thành công.
-2021-11-22 01:05:32,115 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:32,115 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:32,116 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 10: Chọn button Đồng ý
-2021-11-22 01:05:33,933 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 11: Quay về trang quản lý sản phẩm
-2021-11-22 01:05:34,036 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 1: Nhập mã sản phẩm cần tìm
-2021-11-22 01:05:35,138 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 2: Nhấn button Tìm kiếm
-2021-11-22 01:05:37,150 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 3: Kiểm tra product code trả về
-2021-11-22 01:05:37,198 INFO  atg.webportal.services.Product_Management - Actual = 259287
-2021-11-22 01:05:37,198 INFO  atg.webportal.services.Product_Management - Expected = 259287
-2021-11-22 01:05:37,198 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:37,198 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:37,199 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 4: Kiểm tra product name trả về
-2021-11-22 01:05:37,241 INFO  atg.webportal.services.Product_Management - Actual = Auto Product Name 259287
-2021-11-22 01:05:37,242 INFO  atg.webportal.services.Product_Management - Expected = Auto Product Name 259287
-2021-11-22 01:05:37,242 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:37,242 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:37,242 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 5: Kiểm tra hạn mức của sản phẩm
-2021-11-22 01:05:37,284 INFO  atg.webportal.services.Product_Management - Actual = 1,000,000,000.0
-2021-11-22 01:05:37,284 INFO  atg.webportal.services.Product_Management - Expected = 1,000,000,000.0
-2021-11-22 01:05:37,284 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:37,285 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:37,285 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 6: Kiểm tra hạn mức trong ngày của sản phẩm
-2021-11-22 01:05:37,328 INFO  atg.webportal.services.Product_Management - Actual = 50,000,000.0
-2021-11-22 01:05:37,328 INFO  atg.webportal.services.Product_Management - Expected = 50,000,000.0
-2021-11-22 01:05:37,328 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:37,328 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:37,328 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 7: Kiểm tra ghi chú của sản phẩm
-2021-11-22 01:05:37,371 INFO  atg.webportal.services.Product_Management - Actual = Create Name Product
-2021-11-22 01:05:37,371 INFO  atg.webportal.services.Product_Management - Expected = Create Name Product
-2021-11-22 01:05:37,371 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:37,371 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:37,371 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 8: Kiểm tra trạng thái của sản phẩm
-2021-11-22 01:05:37,411 INFO  atg.webportal.services.Product_Management - Actual = Có
-2021-11-22 01:05:37,411 INFO  atg.webportal.services.Product_Management - Expected = Có
-2021-11-22 01:05:37,411 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:37,411 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:37,411 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 9: Xoá giá trị product id khỏi ô Mã sản phẩm
-2021-11-22 01:05:38,496 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 10: Nhất nút tìm kiếm
-2021-11-22 01:05:39,896 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 1: Nhập tên sản phẩm cần tìm
-2021-11-22 01:05:41,017 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 2: Nhấn button Tìm kiếm
-2021-11-22 01:05:42,146 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 3: Kiểm tra product code trả về
-2021-11-22 01:05:43,204 INFO  atg.webportal.services.Product_Management - Actual = 259287
-2021-11-22 01:05:43,204 INFO  atg.webportal.services.Product_Management - Expected = 259287
-2021-11-22 01:05:43,204 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:43,204 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:43,204 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 4: Kiểm tra hạn mức của sản phẩm
-2021-11-22 01:05:43,239 INFO  atg.webportal.services.Product_Management - Actual = 1,000,000,000.0
-2021-11-22 01:05:43,239 INFO  atg.webportal.services.Product_Management - Expected = 1,000,000,000.0
-2021-11-22 01:05:43,239 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:43,239 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:43,239 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 5: Kiểm tra hạn mức trong ngày của sản phẩm
-2021-11-22 01:05:43,273 INFO  atg.webportal.services.Product_Management - Actual = 50,000,000.0
-2021-11-22 01:05:43,273 INFO  atg.webportal.services.Product_Management - Expected = 50,000,000.0
-2021-11-22 01:05:43,273 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:43,273 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:43,273 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 6: Kiểm tra ghi chú của sản phẩm
-2021-11-22 01:05:43,306 INFO  atg.webportal.services.Product_Management - Actual = Create Name Product
-2021-11-22 01:05:43,306 INFO  atg.webportal.services.Product_Management - Expected = Create Name Product
-2021-11-22 01:05:43,306 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:43,306 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:43,306 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 7: Kiểm tra trạng thái của sản phẩm
-2021-11-22 01:05:43,340 INFO  atg.webportal.services.Product_Management - Actual = Có
-2021-11-22 01:05:43,340 INFO  atg.webportal.services.Product_Management - Expected = Có
-2021-11-22 01:05:43,340 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:43,340 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:43,340 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 8: Xoá giá trị product name khỏi ô Tên sản phẩm
-2021-11-22 01:05:44,436 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 9: Nhất nút tìm kiếm
-2021-11-22 01:05:44,438 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 1: Nhập mã sản phẩm muốn chỉnh sửa
-2021-11-22 01:05:45,534 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 2: Nhấn button Tìm kiếm
-2021-11-22 01:05:46,702 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 3: Nhấn button Edit product of the productID
-2021-11-22 01:05:47,842 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 4: Nhập tên sản phẩm mới
-2021-11-22 01:05:50,059 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 5: Nhập hạn mức sản phẩm mới
-2021-11-22 01:05:52,181 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 6: Nhập hạn mức trong ngày mới
-2021-11-22 01:05:54,306 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 7: Nhập ghi chú mới
-2021-11-22 01:05:56,450 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 8: Nhấn nút cập nhật
-2021-11-22 01:05:57,588 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 9: Kiểm tra thông báo cập nhật thành công hiển thị
-2021-11-22 01:05:58,151 INFO  atg.webportal.services.Product_Management - Actual = Cập nhật thành công.
-2021-11-22 01:05:58,151 INFO  atg.webportal.services.Product_Management - Expected = Cập nhật thành công.
-2021-11-22 01:05:58,151 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:05:58,151 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:05:58,151 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 10: Quay về trang Quản lý sản phẩm
-2021-11-22 01:05:58,245 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 11: Nhập mã sản phẩm cần tìm
-2021-11-22 01:05:59,362 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 12: Nhấn button Tìm kiếm
-2021-11-22 01:06:00,486 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 13: Kiểm tra product code trả về
-2021-11-22 01:06:00,534 INFO  atg.webportal.services.Product_Management - Actual = 259287
-2021-11-22 01:06:00,534 INFO  atg.webportal.services.Product_Management - Expected = 259287
-2021-11-22 01:06:00,534 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:06:00,534 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:06:00,534 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 14: Kiểm tra product name trả về
-2021-11-22 01:06:00,576 INFO  atg.webportal.services.Product_Management - Actual = Auto Product Name 259287 Edit
-2021-11-22 01:06:00,576 INFO  atg.webportal.services.Product_Management - Expected = Auto Product Name 259287 Edit
-2021-11-22 01:06:00,576 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:06:00,576 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:06:00,577 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 15: Kiểm tra hạn mức của sản phẩm
-2021-11-22 01:06:00,619 INFO  atg.webportal.services.Product_Management - Actual = 2,000,000,000.0
-2021-11-22 01:06:00,619 INFO  atg.webportal.services.Product_Management - Expected = 2,000,000,000.0
-2021-11-22 01:06:00,619 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:06:00,620 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:06:00,620 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 16: Kiểm tra hạn mức trong ngày của sản phẩm
-2021-11-22 01:06:00,663 INFO  atg.webportal.services.Product_Management - Actual = 500,000,000.0
-2021-11-22 01:06:00,663 INFO  atg.webportal.services.Product_Management - Expected = 500,000,000.0
-2021-11-22 01:06:00,663 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:06:00,663 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:06:00,664 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 17: Kiểm tra ghi chú của sản phẩm
-2021-11-22 01:06:00,704 INFO  atg.webportal.services.Product_Management - Actual = Create Name Product Edit
-2021-11-22 01:06:00,704 INFO  atg.webportal.services.Product_Management - Expected = Create Name Product Edit
-2021-11-22 01:06:00,704 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:06:00,704 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:06:00,704 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 18: Kiểm tra trạng thái của sản phẩm
-2021-11-22 01:06:00,743 INFO  atg.webportal.services.Product_Management - Actual = Có
-2021-11-22 01:06:00,743 INFO  atg.webportal.services.Product_Management - Expected = Có
-2021-11-22 01:06:00,743 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:06:00,743 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:06:00,744 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 1: Nhấn icon delete sản phẩm
-2021-11-22 01:06:01,827 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 2: Nhấn button Huỷ
-2021-11-22 01:06:02,895 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 3: Nhấn icon delete sản phẩm
-2021-11-22 01:06:03,945 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 4: Nhấn button Đồng ý
-2021-11-22 01:06:05,133 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 5: Kiểm tra câu thông báo sau khi đồng ý delete
-2021-11-22 01:06:05,176 INFO  atg.webportal.services.Product_Management - Actual = Xóa thành công.
-2021-11-22 01:06:05,176 INFO  atg.webportal.services.Product_Management - Expected = Xóa thành công.
-2021-11-22 01:06:05,176 INFO  atg.webportal.services.Product_Management - Compare value = true
-2021-11-22 01:06:05,176 INFO  atg.webportal.services.Product_Management - ===PASSED===
-2021-11-22 01:06:05,176 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 6: Quay về home page
-2021-11-22 01:06:10,380 INFO  atg.webportal.services.Product_Management - OS name = windows 10
-2021-11-22 01:06:11,194 INFO  atg.webportal.services.Product_Management - ---------- QUIT BROWSER SUCCESS ----------
+2021-11-25 16:51:43,756 INFO  atg.webportal.services.Customer_Management - Actual = Thêm mới thành công.
+2021-11-25 16:51:43,756 INFO  atg.webportal.services.Customer_Management - Expected = Thêm mới thành công.
+2021-11-25 16:51:43,756 INFO  atg.webportal.services.Customer_Management - Compare value = true
+2021-11-25 16:51:43,757 INFO  atg.webportal.services.Customer_Management - ===PASSED===
+2021-11-25 16:51:52,354 INFO  atg.webportal.services.Customer_Management - Actual = 768801583835
+2021-11-25 16:51:52,354 INFO  atg.webportal.services.Customer_Management - Expected = 768801583835
+2021-11-25 16:51:52,354 INFO  atg.webportal.services.Customer_Management - Compare value = true
+2021-11-25 16:51:52,354 INFO  atg.webportal.services.Customer_Management - ===PASSED===
+2021-11-25 16:51:53,421 INFO  atg.webportal.services.Customer_Management - Actual = ATG Name 46349
+2021-11-25 16:51:53,422 INFO  atg.webportal.services.Customer_Management - Expected = ATG Name 46349
+2021-11-25 16:51:53,422 INFO  atg.webportal.services.Customer_Management - Compare value = true
+2021-11-25 16:51:53,422 INFO  atg.webportal.services.Customer_Management - ===PASSED===
+2021-11-25 16:51:59,407 INFO  atg.webportal.services.Customer_Management - Actual = 768801583835
+2021-11-25 16:51:59,407 INFO  atg.webportal.services.Customer_Management - Expected = 768801583835
+2021-11-25 16:51:59,407 INFO  atg.webportal.services.Customer_Management - Compare value = true
+2021-11-25 16:51:59,407 INFO  atg.webportal.services.Customer_Management - ===PASSED===
+2021-11-25 16:52:00,465 INFO  atg.webportal.services.Customer_Management - Actual = ATG Name 46349
+2021-11-25 16:52:00,465 INFO  atg.webportal.services.Customer_Management - Expected = ATG Name 46349
+2021-11-25 16:52:00,465 INFO  atg.webportal.services.Customer_Management - Compare value = true
+2021-11-25 16:52:00,465 INFO  atg.webportal.services.Customer_Management - ===PASSED===
+2021-11-25 16:52:06,417 INFO  atg.webportal.services.Customer_Management - Actual = 768801583835
+2021-11-25 16:52:06,417 INFO  atg.webportal.services.Customer_Management - Expected = 768801583835
+2021-11-25 16:52:06,417 INFO  atg.webportal.services.Customer_Management - Compare value = true
+2021-11-25 16:52:06,417 INFO  atg.webportal.services.Customer_Management - ===PASSED===
+2021-11-25 16:52:07,472 INFO  atg.webportal.services.Customer_Management - Actual = ATG Name 46349
+2021-11-25 16:52:07,472 INFO  atg.webportal.services.Customer_Management - Expected = ATG Name 46349
+2021-11-25 16:52:07,472 INFO  atg.webportal.services.Customer_Management - Compare value = true
+2021-11-25 16:52:07,472 INFO  atg.webportal.services.Customer_Management - ===PASSED===
+2021-11-25 16:52:59,122 INFO  atg.webportal.services.Customer_Management - Actual = Cập nhật thành công.
+2021-11-25 16:52:59,123 INFO  atg.webportal.services.Customer_Management - Expected = Cập nhật thành công.
+2021-11-25 16:52:59,123 INFO  atg.webportal.services.Customer_Management - Compare value = true
+2021-11-25 16:52:59,123 INFO  atg.webportal.services.Customer_Management - ===PASSED===
+2021-11-25 16:53:03,388 INFO  atg.webportal.services.Customer_Management - Actual = -- Vui lòng chọn Thành phố/Tỉnh
+2021-11-25 16:53:03,388 INFO  atg.webportal.services.Customer_Management - Expected = -- Vui lòng chọn Thành phố/Tỉnh
+2021-11-25 16:53:03,388 INFO  atg.webportal.services.Customer_Management - Compare value = true
+2021-11-25 16:53:03,388 INFO  atg.webportal.services.Customer_Management - ===PASSED===
+2021-11-25 16:53:03,468 INFO  atg.webportal.services.Customer_Management - Actual = -- Vui lòng chọn Thành phố/Tỉnh
+2021-11-25 16:53:03,468 INFO  atg.webportal.services.Customer_Management - Expected = -- Vui lòng chọn Thành phố/Tỉnh
+2021-11-25 16:53:03,468 INFO  atg.webportal.services.Customer_Management - Compare value = true
+2021-11-25 16:53:03,468 INFO  atg.webportal.services.Customer_Management - ===PASSED===
+2021-11-25 16:53:09,004 INFO  atg.webportal.services.Customer_Management - OS name = windows 10
+2021-11-25 16:53:09,922 INFO  atg.webportal.services.Customer_Management - ---------- QUIT BROWSER SUCCESS ----------
+2021-11-25 16:53:16,870 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 1: Chọn Menu Dịch Vụ > Quản Lý Sản Phẩm
+2021-11-25 16:53:21,043 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 2: Chọn button Thêm mới
+2021-11-25 16:53:22,185 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 3: Nhập mã sản phẩm
+2021-11-25 16:53:23,320 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 4: Nhập tên sản phẩm
+2021-11-25 16:53:24,495 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 5: Nhập hạn mức sản phẩm
+2021-11-25 16:53:25,585 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 6: Nhập hạn mức trong ngày
+2021-11-25 16:53:26,691 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 7: Nhập ghi chú
+2021-11-25 16:53:27,811 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 8: Chọn button Lưu
+2021-11-25 16:53:30,140 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 9: Verify thông báo trả về sau khi lưu
+2021-11-25 16:53:30,190 INFO  atg.webportal.services.Product_Management - Actual = Thêm mới thành công.
+2021-11-25 16:53:30,190 INFO  atg.webportal.services.Product_Management - Expected = Thêm mới thành công.
+2021-11-25 16:53:30,190 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:30,190 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:30,190 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 10: Chọn button Đồng ý
+2021-11-25 16:53:32,074 INFO  atg.webportal.services.Product_Management - TC_01_CreateProduct - Step 11: Quay về trang quản lý sản phẩm
+2021-11-25 16:53:32,206 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 1: Nhập mã sản phẩm cần tìm
+2021-11-25 16:53:33,357 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 2: Nhấn button Tìm kiếm
+2021-11-25 16:53:34,716 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 3: Kiểm tra product code trả về
+2021-11-25 16:53:34,774 INFO  atg.webportal.services.Product_Management - Actual = 947568
+2021-11-25 16:53:34,774 INFO  atg.webportal.services.Product_Management - Expected = 947568
+2021-11-25 16:53:34,774 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:34,775 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:34,775 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 4: Kiểm tra product name trả về
+2021-11-25 16:53:34,823 INFO  atg.webportal.services.Product_Management - Actual = Auto Product Name 947568
+2021-11-25 16:53:34,823 INFO  atg.webportal.services.Product_Management - Expected = Auto Product Name 947568
+2021-11-25 16:53:34,823 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:34,823 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:34,823 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 5: Kiểm tra hạn mức của sản phẩm
+2021-11-25 16:53:34,870 INFO  atg.webportal.services.Product_Management - Actual = 1,000,000,000.0
+2021-11-25 16:53:34,870 INFO  atg.webportal.services.Product_Management - Expected = 1,000,000,000.0
+2021-11-25 16:53:34,870 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:34,870 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:34,870 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 6: Kiểm tra hạn mức trong ngày của sản phẩm
+2021-11-25 16:53:34,921 INFO  atg.webportal.services.Product_Management - Actual = 50,000,000.0
+2021-11-25 16:53:34,921 INFO  atg.webportal.services.Product_Management - Expected = 50,000,000.0
+2021-11-25 16:53:34,921 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:34,921 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:34,921 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 7: Kiểm tra ghi chú của sản phẩm
+2021-11-25 16:53:34,970 INFO  atg.webportal.services.Product_Management - Actual = Create Name Product
+2021-11-25 16:53:34,970 INFO  atg.webportal.services.Product_Management - Expected = Create Name Product
+2021-11-25 16:53:34,970 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:34,970 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:34,970 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 8: Kiểm tra trạng thái của sản phẩm
+2021-11-25 16:53:35,019 INFO  atg.webportal.services.Product_Management - Actual = Có
+2021-11-25 16:53:35,019 INFO  atg.webportal.services.Product_Management - Expected = Có
+2021-11-25 16:53:35,019 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:35,019 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:35,019 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 9: Xoá giá trị product id khỏi ô Mã sản phẩm
+2021-11-25 16:53:36,123 INFO  atg.webportal.services.Product_Management - TC_02_SearchProductByProductID - Step 10: Nhất nút tìm kiếm
+2021-11-25 16:53:37,660 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 1: Nhập tên sản phẩm cần tìm
+2021-11-25 16:53:38,798 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 2: Nhấn button Tìm kiếm
+2021-11-25 16:53:39,989 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 3: Kiểm tra product code trả về
+2021-11-25 16:53:41,042 INFO  atg.webportal.services.Product_Management - Actual = 947568
+2021-11-25 16:53:41,042 INFO  atg.webportal.services.Product_Management - Expected = 947568
+2021-11-25 16:53:41,042 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:41,042 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:41,042 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 4: Kiểm tra hạn mức của sản phẩm
+2021-11-25 16:53:41,090 INFO  atg.webportal.services.Product_Management - Actual = 1,000,000,000.0
+2021-11-25 16:53:41,090 INFO  atg.webportal.services.Product_Management - Expected = 1,000,000,000.0
+2021-11-25 16:53:41,090 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:41,090 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:41,090 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 5: Kiểm tra hạn mức trong ngày của sản phẩm
+2021-11-25 16:53:41,132 INFO  atg.webportal.services.Product_Management - Actual = 50,000,000.0
+2021-11-25 16:53:41,133 INFO  atg.webportal.services.Product_Management - Expected = 50,000,000.0
+2021-11-25 16:53:41,133 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:41,133 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:41,133 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 6: Kiểm tra ghi chú của sản phẩm
+2021-11-25 16:53:41,172 INFO  atg.webportal.services.Product_Management - Actual = Create Name Product
+2021-11-25 16:53:41,172 INFO  atg.webportal.services.Product_Management - Expected = Create Name Product
+2021-11-25 16:53:41,172 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:41,172 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:41,172 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 7: Kiểm tra trạng thái của sản phẩm
+2021-11-25 16:53:41,213 INFO  atg.webportal.services.Product_Management - Actual = Có
+2021-11-25 16:53:41,213 INFO  atg.webportal.services.Product_Management - Expected = Có
+2021-11-25 16:53:41,213 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:41,213 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:41,213 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 8: Xoá giá trị product name khỏi ô Tên sản phẩm
+2021-11-25 16:53:42,322 INFO  atg.webportal.services.Product_Management - TC_03_SearchProductByProductName - Step 9: Nhất nút tìm kiếm
+2021-11-25 16:53:42,324 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 1: Nhập mã sản phẩm muốn chỉnh sửa
+2021-11-25 16:53:43,460 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 2: Nhấn button Tìm kiếm
+2021-11-25 16:53:44,725 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 3: Nhấn button Edit product of the productID
+2021-11-25 16:53:45,894 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 4: Nhập tên sản phẩm mới
+2021-11-25 16:53:48,156 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 5: Nhập hạn mức sản phẩm mới
+2021-11-25 16:53:50,319 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 6: Nhập hạn mức trong ngày mới
+2021-11-25 16:53:52,476 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 7: Nhập ghi chú mới
+2021-11-25 16:53:54,646 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 8: Nhấn nút cập nhật
+2021-11-25 16:53:55,819 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 9: Kiểm tra thông báo cập nhật thành công hiển thị
+2021-11-25 16:53:56,389 INFO  atg.webportal.services.Product_Management - Actual = Cập nhật thành công.
+2021-11-25 16:53:56,389 INFO  atg.webportal.services.Product_Management - Expected = Cập nhật thành công.
+2021-11-25 16:53:56,389 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:56,389 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:56,389 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 10: Quay về trang Quản lý sản phẩm
+2021-11-25 16:53:56,513 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 11: Nhập mã sản phẩm cần tìm
+2021-11-25 16:53:57,629 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 12: Nhấn button Tìm kiếm
+2021-11-25 16:53:58,771 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 13: Kiểm tra product code trả về
+2021-11-25 16:53:58,816 INFO  atg.webportal.services.Product_Management - Actual = 947568
+2021-11-25 16:53:58,816 INFO  atg.webportal.services.Product_Management - Expected = 947568
+2021-11-25 16:53:58,816 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:58,816 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:58,816 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 14: Kiểm tra product name trả về
+2021-11-25 16:53:58,856 INFO  atg.webportal.services.Product_Management - Actual = Auto Product Name 947568 Edit
+2021-11-25 16:53:58,856 INFO  atg.webportal.services.Product_Management - Expected = Auto Product Name 947568 Edit
+2021-11-25 16:53:58,856 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:58,856 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:58,856 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 15: Kiểm tra hạn mức của sản phẩm
+2021-11-25 16:53:58,911 INFO  atg.webportal.services.Product_Management - Actual = 2,000,000,000.0
+2021-11-25 16:53:58,911 INFO  atg.webportal.services.Product_Management - Expected = 2,000,000,000.0
+2021-11-25 16:53:58,911 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:58,911 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:58,911 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 16: Kiểm tra hạn mức trong ngày của sản phẩm
+2021-11-25 16:53:58,952 INFO  atg.webportal.services.Product_Management - Actual = 500,000,000.0
+2021-11-25 16:53:58,952 INFO  atg.webportal.services.Product_Management - Expected = 500,000,000.0
+2021-11-25 16:53:58,952 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:58,952 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:58,952 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 17: Kiểm tra ghi chú của sản phẩm
+2021-11-25 16:53:58,991 INFO  atg.webportal.services.Product_Management - Actual = Create Name Product Edit
+2021-11-25 16:53:58,991 INFO  atg.webportal.services.Product_Management - Expected = Create Name Product Edit
+2021-11-25 16:53:58,991 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:58,991 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:58,991 INFO  atg.webportal.services.Product_Management - TC_04_EditProductByProductID - Step 18: Kiểm tra trạng thái của sản phẩm
+2021-11-25 16:53:59,032 INFO  atg.webportal.services.Product_Management - Actual = Có
+2021-11-25 16:53:59,032 INFO  atg.webportal.services.Product_Management - Expected = Có
+2021-11-25 16:53:59,032 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:53:59,032 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:53:59,034 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 1: Nhấn icon delete sản phẩm
+2021-11-25 16:54:00,139 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 2: Nhấn button Huỷ
+2021-11-25 16:54:01,216 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 3: Nhấn icon delete sản phẩm
+2021-11-25 16:54:02,295 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 4: Nhấn button Đồng ý
+2021-11-25 16:54:03,503 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 5: Kiểm tra câu thông báo sau khi đồng ý delete
+2021-11-25 16:54:03,551 INFO  atg.webportal.services.Product_Management - Actual = Xóa thành công.
+2021-11-25 16:54:03,551 INFO  atg.webportal.services.Product_Management - Expected = Xóa thành công.
+2021-11-25 16:54:03,551 INFO  atg.webportal.services.Product_Management - Compare value = true
+2021-11-25 16:54:03,551 INFO  atg.webportal.services.Product_Management - ===PASSED===
+2021-11-25 16:54:03,551 INFO  atg.webportal.services.Product_Management - TC_05_DeleteProduct - Step 6: Quay về home page
+2021-11-25 16:54:08,791 INFO  atg.webportal.services.Product_Management - OS name = windows 10
+2021-11-25 16:54:09,635 INFO  atg.webportal.services.Product_Management - ---------- QUIT BROWSER SUCCESS ----------
+2021-11-25 16:54:16,355 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 1: Chọn Menu Quản Trị > Quản Trị Người Dùng
+2021-11-25 16:54:20,782 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 2: Click button Tạo Mới để mở cửa sổ Thông Tin Người Dùng
+2021-11-25 16:54:22,130 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 3: Nhập username
+2021-11-25 16:54:23,247 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 4: Nhập display name
+2021-11-25 16:54:24,375 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 5: Chọn giới tính
+2021-11-25 16:54:26,518 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 6: Nhập số điện thoại
+2021-11-25 16:54:27,613 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 7: Nhập số extension
+2021-11-25 16:54:28,703 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 8: Chọn Đại Lý Root
+2021-11-25 16:54:31,931 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 9: Nhập ghi chú
+2021-11-25 16:54:33,040 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 10: Chọn button Lưu
+2021-11-25 16:54:35,876 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 11: Kiểm tra message 'Thêm mới thành công:' hiển thị
+2021-11-25 16:54:35,924 INFO  atg.webportal.administration.User_Management - Actual = Thêm mới thành công.
+2021-11-25 16:54:35,924 INFO  atg.webportal.administration.User_Management - Expected = Thêm mới thành công.
+2021-11-25 16:54:35,924 INFO  atg.webportal.administration.User_Management - Compare value = true
+2021-11-25 16:54:35,924 INFO  atg.webportal.administration.User_Management - ===PASSED===
+2021-11-25 16:54:35,924 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 13: Nhấn button Đồng ý
+2021-11-25 16:54:38,569 INFO  atg.webportal.administration.User_Management - TC_01_CreateRootMerchantUser - Step 14: Về lại cửa sổ Quản Lý Người Dùng
+2021-11-25 16:54:41,713 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 1: Nhập user name muốn cập nhật
+2021-11-25 16:54:42,886 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 2: Click button Tìm kiếm
+2021-11-25 16:54:45,279 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 3: Click Edit Icon để mở cửa sổ Thông Tin Người Dùng
+2021-11-25 16:54:47,012 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 4: Chọn tab Thông Tin Phân Quyền
+2021-11-25 16:54:48,142 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 5: Chọn Transaction Management Role Group
+2021-11-25 16:54:49,221 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 6: Chọn Card Management Role Group
+2021-11-25 16:54:50,272 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 7: Chọn Customer Management Role Group
+2021-11-25 16:54:51,320 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 8: Chọn Product Management Role Group
+2021-11-25 16:54:52,359 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 9: Chọn Account Management Role Group
+2021-11-25 16:54:53,401 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 10: Chọn User Management Role Group
+2021-11-25 16:54:54,445 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 11: Chọn Marchant Management Role Group
+2021-11-25 16:54:55,490 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 12: Chọn MDR Management Role Group
+2021-11-25 16:54:56,536 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 13: Chọn Notification Management Role Group
+2021-11-25 16:54:57,575 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 13: Chọn Mobile Management Role Group
+2021-11-25 16:54:58,625 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 14: Chọn Report Management Role Group
+2021-11-25 16:54:59,665 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 15: Chọn System Role Group
+2021-11-25 16:55:00,707 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 16: Nhập Ghi Chú
+2021-11-25 16:55:01,821 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 17: Click button Cập nhật
+2021-11-25 16:55:04,783 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 18: Verify câu thông báo sau khi update
+2021-11-25 16:55:05,827 INFO  atg.webportal.administration.User_Management - Actual = Cập nhật phân quyền người dùng thành công.
+2021-11-25 16:55:05,827 INFO  atg.webportal.administration.User_Management - Expected = Cập nhật phân quyền người dùng thành công.
+2021-11-25 16:55:05,827 INFO  atg.webportal.administration.User_Management - Compare value = true
+2021-11-25 16:55:05,827 INFO  atg.webportal.administration.User_Management - ===PASSED===
+2021-11-25 16:55:05,827 INFO  atg.webportal.administration.User_Management - TC_02_UpdateRoleForRootMerchantUser - Step 19: Trở về cửa sổ Quản Trị Người Dùng và đóng cửa sổ Thông Tin Người Dùng
+2021-11-25 16:55:05,955 INFO  atg.webportal.administration.User_Management - TC_03_DisabledUser - Step 1: Nhập user name = atg32803@gmail.com muốn vô hiệu
+2021-11-25 16:55:07,094 INFO  atg.webportal.administration.User_Management - TC_03_DisabledUser - Step 2: Click button Tìm kiếm
+2021-11-25 16:55:09,449 INFO  atg.webportal.administration.User_Management - TC_03_DisabledUser - Step 3: Click Edit Icon để mở cửa sổ Thông Tin Người Dùng
+2021-11-25 16:55:11,137 INFO  atg.webportal.administration.User_Management - TC_03_DisabledUser - Step 4: Click Edit Icon để mở cửa sổ Thông Tin Người Dùng
+2021-11-25 16:55:12,286 INFO  atg.webportal.administration.User_Management - TC_03_DisabledUser - Step 5: Chọn button Disable
+2021-11-25 16:55:13,920 INFO  atg.webportal.administration.User_Management - TC_03_DisabledUser - Step 5: Chọn button Đồng ý để vô hiệu user
+2021-11-25 16:55:16,646 INFO  atg.webportal.administration.User_Management - TC_03_DisabledUser - Step 6: Kiểm tra message 'Disable Account Success.
+2021-11-25 16:55:17,689 INFO  atg.webportal.administration.User_Management - Actual = Khóa người dùng thành công.
+2021-11-25 16:55:17,689 INFO  atg.webportal.administration.User_Management - Expected = Khóa người dùng thành công.
+2021-11-25 16:55:17,689 INFO  atg.webportal.administration.User_Management - Compare value = true
+2021-11-25 16:55:17,689 INFO  atg.webportal.administration.User_Management - ===PASSED===
+2021-11-25 16:55:17,689 INFO  atg.webportal.administration.User_Management - TC_03_DisabledUser - Step 7: Trở về cửa sổ Quản Trị Người Dùng và đóng cửa sổ Thông Tin Người Dùng
+2021-11-25 16:55:17,802 INFO  atg.webportal.administration.User_Management - TC_03_DisabledUser - Step 8: Click button Tìm kiếm để làm mới lại thông user
+2021-11-25 16:55:20,142 INFO  atg.webportal.administration.User_Management - TC_03_DisabledUser - Step 9: Verify Tình Trạng của user đã bị vô hiệu
+2021-11-25 16:55:20,162 INFO  atg.webportal.administration.User_Management - Actual = ĐÃ KHOÁ
+2021-11-25 16:55:20,162 INFO  atg.webportal.administration.User_Management - Expected = ĐÃ KHOÁ
+2021-11-25 16:55:20,162 INFO  atg.webportal.administration.User_Management - Compare value = true
+2021-11-25 16:55:20,162 INFO  atg.webportal.administration.User_Management - ===PASSED===
+2021-11-25 16:55:20,164 INFO  atg.webportal.administration.User_Management - TC_04_EnableUser - Step 1: Nhập user name = atg32803@gmail.com muốn vô hiệu
+2021-11-25 16:55:21,304 INFO  atg.webportal.administration.User_Management - TC_04_EnableUser - Step 2: Click button Tìm kiếm
+2021-11-25 16:55:23,580 INFO  atg.webportal.administration.User_Management - TC_04_EnableUser - Step 3: Click Edit Icon để mở cửa sổ Thông Tin Người Dùng
+2021-11-25 16:55:25,182 INFO  atg.webportal.administration.User_Management - TC_04_EnableUser - Step 4: Click Edit Icon để mở cửa sổ Thông Tin Người Dùng
+2021-11-25 16:55:26,324 INFO  atg.webportal.administration.User_Management - TC_04_EnableUser - Step 5: Chọn button Kích hoạt
+2021-11-25 16:55:27,964 INFO  atg.webportal.administration.User_Management - TC_04_EnableUser - Step 5: Chọn button Đồng ý để vô hiệu user
+2021-11-25 16:55:30,786 INFO  atg.webportal.administration.User_Management - TC_04_EnableUser - Step 6: Kiểm tra message 'Enable Account Success.
+2021-11-25 16:55:31,818 INFO  atg.webportal.administration.User_Management - Actual = Kích hoạt người dùng thành công.
+2021-11-25 16:55:31,818 INFO  atg.webportal.administration.User_Management - Expected = Kích hoạt người dùng thành công.
+2021-11-25 16:55:31,818 INFO  atg.webportal.administration.User_Management - Compare value = true
+2021-11-25 16:55:31,818 INFO  atg.webportal.administration.User_Management - ===PASSED===
+2021-11-25 16:55:31,818 INFO  atg.webportal.administration.User_Management - TC_04_EnableUser - Step 7: Trở về cửa sổ Quản Trị Người Dùng và đóng cửa sổ Thông Tin Người Dùng
+2021-11-25 16:55:31,928 INFO  atg.webportal.administration.User_Management - TC_04_EnableUser - Step 8: Click button Tìm kiếm để làm mới lại thông user
+2021-11-25 16:55:34,261 INFO  atg.webportal.administration.User_Management - TC_04_EnableUser - Step 9: Verify Tình Trạng của user đã bị vô hiệu
+2021-11-25 16:55:34,280 INFO  atg.webportal.administration.User_Management - Actual = ĐANG HOẠT ĐỘNG
+2021-11-25 16:55:34,280 INFO  atg.webportal.administration.User_Management - Expected = ĐANG HOẠT ĐỘNG
+2021-11-25 16:55:34,280 INFO  atg.webportal.administration.User_Management - Compare value = true
+2021-11-25 16:55:34,280 INFO  atg.webportal.administration.User_Management - ===PASSED===
+2021-11-25 16:55:34,281 INFO  atg.webportal.administration.User_Management - Trở về HomePage
+2021-11-25 16:55:34,837 INFO  atg.webportal.administration.User_Management - Log out khỏi Webportal
+2021-11-25 16:55:39,585 INFO  atg.webportal.administration.User_Management - Đóng cửa sổ browser
+2021-11-25 16:55:39,585 INFO  atg.webportal.administration.User_Management - OS name = windows 10
+2021-11-25 16:55:40,468 INFO  atg.webportal.administration.User_Management - ---------- QUIT BROWSER SUCCESS ----------
