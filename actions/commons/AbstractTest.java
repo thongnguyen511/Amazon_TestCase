@@ -1,10 +1,5 @@
 package commons;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
@@ -19,7 +14,7 @@ import org.testng.Reporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.HomePO;
-import pageObjects.LoginPO;
+import pageObjects.SignInPO;
 
 public class AbstractTest {
 	WebDriver driver;
@@ -64,11 +59,12 @@ public class AbstractTest {
 	}
 
 	public HomePO loginToApp(WebDriver mappingDriver) {
-		LoginPO loginPage = PageGeneratorManager.getLoginPage(mappingDriver);
-		loginPage.clickLoginButton();
-		loginPage.inputToUserNameTextbox(Constants.USERNAME);
-		loginPage.inputToPasswordTextbox(Constants.PASS);
-		return loginPage.clickDangnhapButton();
+		SignInPO signInPage = PageGeneratorManager.getSignInPage(mappingDriver);
+		signInPage.clickSignInLink();
+		signInPage.enterUserName(Constants.USERNAME);
+		signInPage.clickContinueButton();
+		signInPage.enterPassword(Constants.PASS);
+		return signInPage.clickSignInButton();
 	}
 
 	private boolean checkPassed(boolean condition) {
@@ -188,44 +184,5 @@ public class AbstractTest {
 			log.info(e.getMessage());
 		}
 	}
-	
-	protected String getNextDate(int numberofDays) {
-		Calendar c = Calendar.getInstance();
-		c.add(Calendar.DAY_OF_MONTH, numberofDays);
-		Date date = c.getTime();
-		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		String strDate = dateFormat.format(date);
-		return strDate;
-	}
-	
-	protected static int randomNumber(int min, int max) {
-		Random generator = new Random();
-		return generator.nextInt((max - min) + 1) + min;     
-	}
-    /**      * Random string with a-zA-Z0-9, not included special characters      */     
-	protected String randomAlphaNumeric(int numberOfCharactor) {  
-		final String alpha = "abcdefghijklmnopqrstuvwxyz"; 
-		final String alphaUpperCase = alpha.toUpperCase(); 
-		final String ALPHA_NUMERIC = alpha + alphaUpperCase;     
-		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < numberOfCharactor; i++) { 
-			int number = randomNumber(0, ALPHA_NUMERIC.length() - 1);            
-			char ch = ALPHA_NUMERIC.charAt(number);             
-			sb.append(ch);         
-		}         
-		return sb.toString();     
-	}
-	
-	/**      * Random string with 0-9, not included special characters      */     
-	protected String randomNumeric(int numberOfCharactor) {  
-		final String STRING_NUMERIC = "0123456789"; 
-		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < numberOfCharactor; i++) { 
-			int number = randomNumber(0, STRING_NUMERIC.length() - 1);            
-			char ch = STRING_NUMERIC.charAt(number);             
-			sb.append(ch);         
-		}         
-		return sb.toString();     
-	}
-	 
+
 }

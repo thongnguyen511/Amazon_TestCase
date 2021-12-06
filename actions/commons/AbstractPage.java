@@ -1,5 +1,10 @@
 package commons;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -13,10 +18,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import pageObjects.HomePO;
-import pageObjects.LoginPO;
-import pageUIs.AbstractPUI;
 
 public class AbstractPage {
 	private WebElement element;
@@ -141,7 +142,8 @@ public class AbstractPage {
 		return select.getFirstSelectedOption().getText();
 	}
 
-	public void selectItemInDropdown(WebDriver driver, String parentXpath, String allItemXpath, String expectedValueItem) throws Exception {
+	public void selectItemInDropdown(WebDriver driver, String parentXpath, String allItemXpath,
+			String expectedValueItem) throws Exception {
 		element = driver.findElement(By.xpath(parentXpath));
 
 		javascriptExecutor = (JavascriptExecutor) driver;
@@ -218,7 +220,7 @@ public class AbstractPage {
 			element.click();
 		}
 	}
-	
+
 	public boolean isControlDisplayed(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		return element.isDisplayed();
@@ -337,7 +339,8 @@ public class AbstractPage {
 
 	public boolean verifyTextInInnerText(WebDriver driver, String textExpected) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		String textActual = (String) js.executeScript("return document.documentElement.innerText.match('" + textExpected + "')[0]");
+		String textActual = (String) js
+				.executeScript("return document.documentElement.innerText.match('" + textExpected + "')[0]");
 		System.out.println("Text actual = " + textActual);
 		return textActual.equals(textExpected);
 	}
@@ -361,14 +364,14 @@ public class AbstractPage {
 		js.executeScript("arguments[0].click();", element);
 	}
 
-	public void clickToElementByJS(WebDriver driver, String locator, String...values) {
+	public void clickToElementByJS(WebDriver driver, String locator, String... values) {
 		locator = String.format(locator, (Object[]) values);
 		scrollToElement(driver, locator);
 		element = driver.findElement(By.xpath(locator));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
 	}
-	
+
 	public void scrollToElement(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -415,7 +418,7 @@ public class AbstractPage {
 		byLocator = By.xpath(locator);
 		waitExplicit.until(ExpectedConditions.elementToBeClickable(byLocator));
 	}
-	
+
 	public void waitForElementVisible(WebDriver driver, String locator) {
 		waitExplicit = new WebDriverWait(driver, longTimeout);
 		byLocator = By.xpath(locator);
@@ -423,7 +426,15 @@ public class AbstractPage {
 		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
 		overrideGlobalTimeout(driver, Constants.LONG_TIMEOUT);
 	}
-	
+
+	public void waitForAllElementVisible(WebDriver driver, String locator) {
+		waitExplicit = new WebDriverWait(driver, longTimeout);
+		byLocator = By.xpath(locator);
+		overrideGlobalTimeout(driver, Constants.LONG_TIMEOUT);
+		waitExplicit.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byLocator));
+		overrideGlobalTimeout(driver, Constants.LONG_TIMEOUT);
+	}
+
 	public void waitForElementVisible(WebDriver driver, String locator, String... values) {
 		locator = String.format(locator, (Object[]) values);
 		waitExplicit = new WebDriverWait(driver, longTimeout);
@@ -432,7 +443,7 @@ public class AbstractPage {
 		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
 		overrideGlobalTimeout(driver, Constants.LONG_TIMEOUT);
 	}
-	
+
 	public void waitForElementInvisible(WebDriver driver, String locator) {
 		waitExplicit = new WebDriverWait(driver, longTimeout);
 		byLocator = By.xpath(locator);
@@ -446,11 +457,11 @@ public class AbstractPage {
 		waitExplicit.until(ExpectedConditions.alertIsPresent());
 	}
 
-	public LoginPO openLogoutLink(WebDriver driver) {
-		acceptAlert(driver);
-		sleepInSecond(driver, 3);
-		return PageGeneratorManager.getLoginPage(driver);
-	}
+//	public SignInPO openLogoutLink(WebDriver driver) {
+//		acceptAlert(driver);
+//		sleepInSecond(driver, 3);
+//		return PageGeneratorManager.getLoginPage(driver);
+//	}
 
 	public void sleepInSecond(WebDriver driver, long timeInSecond) {
 		try {
@@ -459,11 +470,64 @@ public class AbstractPage {
 			e.printStackTrace();
 		}
 	}
-	
-	public HomePO returnToHomePage(WebDriver driver) {
-		waitForElementVisible(driver, AbstractPUI.LOGO_TO_HOMEPAGE);
-		clickToElementByJS(driver, AbstractPUI.LOGO_TO_HOMEPAGE);
-		return PageGeneratorManager.getHomePage(driver);
+
+	public boolean isDataDateSortedDescending(WebDriver driver, String locator) {
+		ArrayList<Date> arrayList = new ArrayList<>();
+
+		List<WebElement> elementList = driver.findElements(By.xpath(locator));
+
+		for (WebElement element : elementList) {
+			arrayList.add(convertStringToDate(element.getText()));
+		}
+
+		System.out.println("------Data on UI:------");
+		for (Date publicationDate : arrayList) {
+			System.out.println(publicationDate);
+		}
+
+		ArrayList<Date> sortedList = new ArrayList<>();
+		for (Date child : arrayList) {
+			sortedList.add(child);
+		}
+
+		Collections.sort(sortedList);
+		Collections.reverse(sortedList);
+
+		System.out.println("------Data already sorted by Desc:------");
+		for (Date name : sortedList) {
+			System.out.println(name);
+		}
+		return sortedList.equals(arrayList);
 	}
 
+	public Date convertStringToDate(String dateInString) {
+		dateInString = dateInString.replace(",", "");
+		SimpleDateFormat formatter = new SimpleDateFormat("MMM dd yyyy");
+		Date date = null;
+		try {
+			date = formatter.parse(dateInString);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		return date;
+
+	}
+
+	public boolean is16BookImageDisplayedOnPage(WebDriver driver, String locator) {
+		elements = driver.findElements(By.xpath(locator));
+		if (elements.size() == 16) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public boolean isNextButtonDisplayed(WebDriver driver, String locator) {
+		elements = driver.findElements(By.xpath(locator));
+		if (elements.size() == 0) {
+			return false;
+		} else {
+			return true;
+		}
+	}
 }

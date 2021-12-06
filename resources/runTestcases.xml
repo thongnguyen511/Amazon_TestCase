@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="ATG_Webportal" parallel="tests" thread-count="3">
+<suite name="Amazon_Test" parallel="tests" thread-count="3">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
@@ -9,16 +9,14 @@
 	<test name="Run on CHROME">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<class name="atg.webportal.services.Customer_Management"/>
-			<class name="atg.webportal.services.Product_Management"/>
-			<class name="atg.webportal.administration.User_Management"/>
+			<class name="amazon.webportal.NVG_AutomationTask"/>
 		</classes>
 	</test>
 
 <!-- 	<test name="Run on FireFox"> -->
 <!-- 		<parameter name="browser" value="Firefox"></parameter> -->
 <!-- 		<classes> -->
-<!-- 			<class name="atg.webportal.services.Customer_Management"/> -->
+<!-- 			<class name="amazon.webportal.NVG_AutomationTask"/> -->
 <!-- 		</classes> -->
 <!-- 	</test> -->
 	
